@@ -3,26 +3,54 @@ body {
     margin: 0px;
 }
 
-h1 {
-    font-size: 50px;
+#top-banner {
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
 }
 
-h2 {
-    font-size: 40px;
+.flexible-container {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#welcome-to {
+    padding-left: 7%;
+    padding-right: 3%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 h4 {
     font-size: 18px;
 }
 
-#top-banner {
-    background-image: url(images/top-banner.png);
-    background-repeat: no-repeat;
+.paragraph-1 {
+    color: gray;
+    padding-right: 2%;
+    font-size: 16px;
+    font-weight: 400;
+    width: 500px;
+    text-align: left;
 }
 
-#welcome-to {
-    padding-left: 7%;
-    padding-right: 3%;
+.link-button {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(deepskyblue, skyblue);
+    padding: 10px 40px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.half-width img {
+    width: 85%;
+    margin-top: 25px;
 }
 
 #dream-big {
@@ -51,48 +79,8 @@ h4 {
     width: 40%;
 }
 
-#baby-web-developer {
-    border-left: 8px solid blue;
-    border-radius: 8px;
-    box-shadow: 10px 10px 40px gray;
-    margin-top: 1%;
-    margin-left: 6%;
-    margin-right: 2%;
-    padding-left: 20px;
-    padding-right: 10px;
-    width: 40%;
-}
-
-.flexible-container {
-    display: flex;
-    margin-bottom: 100px;
-}
-
-.half-width {
-    width: 50%;
-}
-
-.half-width img {
-    width: 85%;
-    margin-top: 25px;
-}
-
-.paragraph-1 {
-    color: gray;
-    padding-right: 2%;
-    font-size: 16px;
-    font-weight: 400;
-    width: 500px;
-    text-align: left;
-}
-
-.link-button {
-    text-decoration: none;
-    color: white;
-    background-image: linear-gradient(deepskyblue, skyblue);
-    padding: 10px 40px;
-    font-weight: 700;
-    border-radius: 5px;
+h2 {
+    font-size: 40px;
 }
 
 .name-color {
@@ -105,4 +93,16 @@ h4 {
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
+}
+
+#baby-web-developer {
+    border-left: 8px solid blue;
+    border-radius: 8px;
+    box-shadow: 10px 10px 40px gray;
+    margin-top: 1%;
+    margin-left: 6%;
+    margin-right: 2%;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 40%;
 }
