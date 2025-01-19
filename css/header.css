@@ -1,0 +1,182 @@
+header {
+  background-color: #fff8f3;
+  background-image: url(../images/developer.png);
+  background-repeat: no-repeat;
+  background-size: 11%;
+  background-position: 0.75rem 12rem;
+  margin-bottom: 5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.3rem;
+  padding: 2rem 7% 0;
+}
+
+#nav-title {
+  font-weight: 800;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li > a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav li > a:hover {
+  color: #716f6f;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+#banner-container {
+  margin: 2.5rem 7% 3rem;
+}
+
+#banner-subtitle {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+#banner-title {
+  font-weight: 650;
+  font-size: 3rem;
+}
+
+#banner-description {
+  margin: 1.2rem 0 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1.15rem;
+}
+
+#banner .primary-button {
+  margin-right: 0.16rem;
+}
+
+#contact-button {
+  color: #fd6e0a;
+  background-color: white;
+  font-weight: 600;
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  border: #fd6e0a 1.2px solid;
+}
+
+#contact-button:hover {
+  background-color: rgb(246, 241, 241);
+  color: #fd6e0a;
+}
+
+#image-container {
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right bottom;
+}
+
+header img {
+  width: 90%;
+  display: block;
+  margin-left: 8%;
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    background-position: 1rem 10rem;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    gap: 2.5rem;
+  }
+
+  #banner .primary-button {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-size: 5.5%;
+    background-position: 1.15rem 3.7rem;
+  }
+
+  nav {
+    padding: 2rem 10% 0;
+  }
+
+  #banner {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  #banner-container {
+    margin: 0 0 0 10%;
+    max-width: 45%;
+  }
+
+  header img {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    background-position: 1.5rem 3.7rem;
+  }
+
+  nav {
+    padding: 2rem 11% 0;
+  }
+
+  nav ul {
+    gap: 3.5rem;
+  }
+
+  #banner-container {
+    margin: 0 0 0 11%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background-position: 2.3rem 3.6rem;
+  }
+
+  nav {
+    padding: 2rem 13% 0;
+  }
+
+  nav ul {
+    gap: 4rem;
+  }
+
+  #banner-container {
+    margin: 0 0 0 13%;
+  }
+}

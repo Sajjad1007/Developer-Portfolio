@@ -1,0 +1,101 @@
+footer {
+  background-color: #fff8f3;
+  padding: 3rem 7% 2.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#connect {
+  margin-bottom: 2.5rem;
+}
+
+.connect-title {
+  font-size: 1.9rem;
+  font-weight: 650;
+  margin-bottom: 1.5rem;
+}
+
+#connect-description {
+  margin-bottom: 1.5rem;
+  font-size: 0.78rem;
+  line-height: 1.15rem;
+}
+
+footer img {
+  width: 25px;
+  margin-right: 1rem;
+}
+
+input,
+textarea {
+  border: none;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+  border-radius: 0.3rem;
+}
+
+textarea {
+  padding-top: 1rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 0.9rem;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  background-color: #ef6909;
+}
+
+@media screen and (min-width: 576px) {
+  footer {
+    padding: 5rem 10% 2.5rem;
+  }
+
+  #connect-description,
+  form {
+    width: 90%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    flex-direction: row;
+    text-align: left;
+    gap: 5rem;
+    padding: 5rem 11% 2.5rem;
+  }
+
+  #connect {
+    max-width: 48%;
+  }
+
+  #connect-description,
+  form {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 5rem 13% 2.5rem;
+    gap: 6rem;
+  }
+}

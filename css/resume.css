@@ -1,0 +1,80 @@
+#resume-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#education,
+#experience {
+  margin: 0.8rem 0 1rem;
+}
+
+.resume-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+article {
+  margin: 0.9rem auto;
+}
+
+.article-title {
+  font-size: 1.05rem;
+  font-weight: 580;
+  margin-bottom: 0.3rem;
+}
+
+.article-subtitle {
+  font-size: 0.9rem;
+  font-weight: 530;
+  margin-bottom: 0.8rem;
+}
+
+.article-description {
+  font-size: 0.78rem;
+  line-height: 1.15rem;
+}
+
+@media screen and (min-width: 576px) {
+  article {
+    padding: 0 7%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #resume {
+    margin: 0 10% 5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #resume {
+    margin: 0 11% 5rem;
+  }
+
+  #resume-container {
+    flex-direction: row;
+    gap: 1.2rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  article {
+    padding: 0;
+  }
+
+  .article-description {
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #resume {
+    margin: 0 13% 5rem;
+  }
+
+  .article-description {
+    padding-right: 5rem;
+  }
+}
