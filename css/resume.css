@@ -13,6 +13,7 @@
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
+  color: var(--dark-gray);
 }
 
 article {
@@ -23,17 +24,20 @@ article {
   font-size: 1.05rem;
   font-weight: 580;
   margin-bottom: 0.3rem;
+  color: var(--dark-gray);
 }
 
 .article-subtitle {
   font-size: 0.9rem;
   font-weight: 530;
   margin-bottom: 0.8rem;
+  color: var(--light-gray);
 }
 
 .article-description {
   font-size: 0.78rem;
   line-height: 1.15rem;
+  color: var(--light-gray);
 }
 
 @media screen and (min-width: 576px) {

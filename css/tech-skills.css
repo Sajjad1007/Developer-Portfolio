@@ -3,6 +3,7 @@
   line-height: 1.15rem;
   text-align: center;
   margin: 0 auto;
+  color: var(--light-gray);
 }
 
 #skills-container {
@@ -22,11 +23,13 @@
   font-size: 1.3rem;
   font-weight: 650;
   margin: 10% 0;
+  color: var(--black);
 }
 
 .tech-description {
   font-size: 0.78rem;
   line-height: 1.15rem;
+  color: var(--light-gray);
 }
 
 @media screen and (min-width: 576px) {

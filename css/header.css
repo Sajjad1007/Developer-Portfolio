@@ -1,16 +1,16 @@
 header {
-  background-color: #fff8f3;
+  background-color: var(--pink);
   background-image: url(../images/developer.png);
   background-repeat: no-repeat;
-  background-size: 12%;
-  background-position: 3.2% 33%;
+  background-size: 11%;
+  background-position: 3% 24%;
   margin-bottom: 6rem;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1.3rem;
   padding: 2rem 7% 0;
 }
@@ -18,13 +18,15 @@ nav {
 #nav-title {
   font-weight: 800;
   font-size: 2.3rem;
-  text-align: center;
+}
+
+#menu-icon {
+  color: var(--black);
+  font-size: 1.5rem;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: none;
 }
 
 nav li {
@@ -34,10 +36,12 @@ nav li {
 nav li > a {
   text-decoration: none;
   font-size: 0.9rem;
+  color: var(--dark-gray);
 }
 
 nav li > a:hover {
-  color: #716f6f;
+  color: var(--light-gray);
+  text-decoration: dashed;
 }
 
 #banner {
@@ -54,37 +58,44 @@ nav li > a:hover {
   font-weight: 500;
   font-size: 2rem;
   margin-bottom: 0.3rem;
+  color: var(--dark-gray);
 }
 
 #banner-title {
   font-weight: 650;
   font-size: 3rem;
+  color: var(--black);
 }
 
 #banner-description {
   margin: 1.2rem 0 1.5rem;
   font-size: 0.85rem;
   line-height: 1.15rem;
+  color: var(--light-gray);
 }
 
-#banner .primary-button {
-  margin-right: 0.95%;
+#button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
 }
 
 #contact-button {
-  color: #fd6e0a;
+  color: var(--orange);
   background-color: white;
   font-weight: 600;
   padding: 0.9rem 1.2rem;
   cursor: pointer;
   border-radius: 0.3rem;
   font-size: 0.9rem;
-  border: #fd6e0a 1.2px solid;
+  border: var(--orange) 1.2px solid;
+  min-width: 152px;
 }
 
 #contact-button:hover {
   background-color: rgb(246, 241, 241);
-  color: #fd6e0a;
+  color: var(--orange);
 }
 
 #image-container {
@@ -92,30 +103,34 @@ nav li > a:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: right bottom;
+  text-align: right;
 }
 
 header img {
   max-width: 90%;
   display: block;
-  margin-left: 7%;
+  margin: 0 4% 0 auto;
 }
 
 @media screen and (min-width: 576px) {
   header {
-    background-position: 2.2% 31%;
+    background-position: 3% 30%;
   }
 
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
+  #menu-icon {
+    display: none;
   }
 
   nav ul {
+    display: flex;
+    align-items: center;
     gap: 2.5rem;
   }
 
-  #banner .primary-button {
-    margin-right: 1rem;
+  #button-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.2rem;
   }
 }
 
@@ -133,12 +148,25 @@ header img {
     flex-direction: row;
     text-align: left;
     align-items: center;
-    justify-content: space-between;
   }
 
   #banner-container {
     margin: 0 0 0 10%;
     max-width: 40%;
+  }
+
+  #button-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1.2rem;
+  }
+
+  #contact-button {
+    min-width: 136px;
+  }
+
+  #image-container {
+    flex: 1;
   }
 }
 

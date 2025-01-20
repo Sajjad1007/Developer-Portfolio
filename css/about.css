@@ -12,10 +12,11 @@
 }
 
 #about-description,
-.info {
+.info-title {
   font-size: 0.85rem;
   line-height: 1.15rem;
   text-align: center;
+  color: var(--light-gray);
 }
 
 #info-container {
@@ -24,6 +25,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 0.7rem;
   margin: 1.8rem auto 0.5rem;
+}
+
+.info {
+  font-size: 0.85rem;
+  line-height: 1.15rem;
+  text-align: center;
+  color: var(--dark-gray);
+  font-weight: 600;
 }
 
 @media screen and (min-width: 576px) {

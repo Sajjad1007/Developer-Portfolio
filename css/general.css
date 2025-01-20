@@ -7,6 +7,14 @@
   font-family: "Work Sans", serif;
 }
 
+:root {
+  --black: #181818;
+  --dark-gray: #474747;
+  --light-gray: #757575;
+  --orange: #fd6e0a;
+  --pink: #fff8f3;
+}
+
 .dark-1 {
   color: #181818;
 }
@@ -20,7 +28,7 @@
 }
 
 .primary-button {
-  background-color: #fd6e0a;
+  background-color: var(--orange);
   color: white;
   font-weight: 600;
   border: none;
@@ -43,6 +51,7 @@ section {
   font-weight: 650;
   text-align: center;
   margin-bottom: 1.5rem;
+  color: var(--black);
 }
 
 hr {

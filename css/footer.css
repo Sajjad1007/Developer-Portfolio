@@ -14,12 +14,14 @@ footer {
   font-size: 1.9rem;
   font-weight: 650;
   margin-bottom: 1.5rem;
+  color: var(--black);
 }
 
 #connect-description {
   margin-bottom: 1.5rem;
   font-size: 0.78rem;
   line-height: 1.15rem;
+  color: var(--light-gray);
 }
 
 footer img {

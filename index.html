@@ -18,26 +18,30 @@
   <header>
     <!------------------------------ Navbar ------------------------------>
     <nav>
-      <h3 id="nav-title">Ma<span style="color: #fd6e0a;">r</span>y</h3>
+      <h3 id="nav-title">Ma<span style="color: var(--orange);">r</span>y</h3>
+      <i id="menu-icon" class="fa-solid fa-bars"></i>
       <ul>
-        <li><a href="#" class="dark-2">Portfolio</a></li>
-        <li><a href="#" class="dark-2">Blog</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Blog</a></li>
         <li><button class="primary-button">Hire Me</button></li>
       </ul>
     </nav>
-    <!------------------------------ Banner ------------------------------>
+    <!------------------------------ Banner Content ------------------------------>
     <div id="banner">
       <div id="banner-container">
-        <h4 id="banner-subtitle" class="dark-2">Hi, I am</h4>
-        <h1 id="banner-title" class="dark-1">Mary Hardy</h1>
-        <p id="banner-description" class="dark-3">Shot what able cold new see hold. Friendly as an
+        <h4 id="banner-subtitle">Hi, I am</h4>
+        <h1 id="banner-title">Mary Hardy</h1>
+        <p id="banner-description">Shot what able cold new see hold. Friendly as an
           betrayed
           formerly he.
           Morning because as to society behaved
           moments.</p>
-        <button class="primary-button">
-          <i class="fa-solid fa-download"></i> Download CV</button>
-        <button id="contact-button"><i class="fa-solid fa-phone"></i> Contact</button>
+        <!------------------------------ Banner Buttons ------------------------------>
+        <div id="button-container">
+          <button class="primary-button">
+            <i class="fa-solid fa-download"></i> Download CV</button>
+          <button id="contact-button"><i class="fa-solid fa-phone"></i> Contact</button>
+        </div>
       </div>
       <div id="image-container">
         <img src="images/hardy.png" alt="Mary Hardy">
@@ -50,8 +54,8 @@
     <!------------------------------ About Me ------------------------------>
     <section id="about">
       <div id="about-container">
-        <h2 class="section-title dark-1">About Me</h2>
-        <p id="about-description" class="dark-3">
+        <h2 class="section-title">About Me</h2>
+        <p id="about-description">
           I'm a designer and developer with a passion for web design. I enjoy developing simple, clean and slick
           websites that provide real value to the end user. Thousands of clients have procured exceptional results
           while
@@ -60,20 +64,20 @@
         <!------------------------- Personal Information ------------------------->
         <div id="info-container">
           <div>
-            <p class="info dark-3">Name:</p>
-            <p class="info dark-2" style="font-weight: 600;">Mary Hardy</p>
+            <p class="info-title">Name:</p>
+            <p class="info">Mary Hardy</p>
           </div>
           <div>
-            <p class="info dark-3">Email:</p>
-            <p class="info dark-2" style="font-weight: 600;">info@gmail.com</p>
+            <p class="info-title">Email:</p>
+            <p class="info">info@gmail.com</p>
           </div>
           <div>
-            <p class="info dark-3">Date of Birth:</p>
-            <p class="info dark-2" style="font-weight: 600;">11 November 1987</p>
+            <p class="info-title">Date of Birth:</p>
+            <p class="info">11 November 1987</p>
           </div>
           <div>
-            <p class="info dark-3">From:</p>
-            <p class="info dark-2" style="font-weight: 600;">Los Angeles, USA</p>
+            <p class="info-title">From:</p>
+            <p class="info">Los Angeles, USA</p>
           </div>
         </div>
       </div>
@@ -81,8 +85,8 @@
 
     <!------------------------------ What I Do ------------------------------>
     <section id="tech-skills">
-      <h2 class="section-title dark-1">What I Do</h2>
-      <p id="skills-description" class="dark-3">
+      <h2 class="section-title">What I Do</h2>
+      <p id="skills-description">
         I have more than 10 years experience building software for clients all over the world. Below is a quick
         overview
         of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out
@@ -93,29 +97,29 @@
       <div id="skills-container">
         <div class="tech-container">
           <img src="images/icons/js.png" alt="Javascript" height="40px">
-          <h4 class="tech-title dark-1">JavaScript</h4>
-          <p class="tech-description dark-3">List skill/technologies here. You can change the icon
+          <h4 class="tech-title">JavaScript</h4>
+          <p class="tech-description">List skill/technologies here. You can change the icon
             above to
             any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
         </div>
         <div class="tech-container">
           <img src="images/icons/react.png" alt="React" height="40px">
-          <h4 class="tech-title dark-1">React</h4>
-          <p class="tech-description dark-3">List skill/technologies here. You can change the icon
+          <h4 class="tech-title">React</h4>
+          <p class="tech-description">List skill/technologies here. You can change the icon
             above to
             any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
         </div>
         <div class="tech-container">
           <img src="images/icons/nodejs.png" alt="Node.js" height="40px">
-          <h4 class="tech-title dark-1">Node.js</h4>
-          <p class="tech-description dark-3">List skill/technologies here. You can change the icon
+          <h4 class="tech-title">Node.js</h4>
+          <p class="tech-description">List skill/technologies here. You can change the icon
             above to
             any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
         </div>
         <div class="tech-container">
           <img src="images/icons/mongo.png" alt="MongoDB" height="40px">
-          <h4 class="tech-title dark-1">MongoDB</h4>
-          <p class="tech-description dark-3">List skill/technologies here. You can change the icon
+          <h4 class="tech-title">MongoDB</h4>
+          <p class="tech-description">List skill/technologies here. You can change the icon
             above to
             any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
         </div>
@@ -124,61 +128,60 @@
 
     <!------------------------------ Resume ------------------------------>
     <section id="resume">
-      <h2 class="section-title dark-1">A Summary of My Resume</h2>
+      <h2 class="section-title">A Summary of My Resume</h2>
       <div id="resume-container">
         <!------------------------------ My Education ------------------------------>
         <div id="education">
-          <h3 class="resume-title dark-2">My Education</h3>
+          <h3 class="resume-title">My Education</h3>
           <article>
-            <h4 class="article-title dark-2">Masters in Computer Engineering</h4>
-            <h5 class="article-subtitle dark-3">Harvard University / 2015 - 2017</h5>
-            <p class="article-description dark-3">List skill/technologies here. You can change the icon above
+            <h4 class="article-title">Masters in Computer Engineering</h4>
+            <h5 class="article-subtitle">Harvard University / 2015 - 2017</h5>
+            <p class="article-description">List skill/technologies here. You can change the icon above
               to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
           </article>
           <hr>
           <article>
-            <h4 class="article-title dark-2">Masters in Computer Engineering</h4>
-            <h5 class="article-subtitle dark-3">Harvard University / 2015 - 2017</h5>
-            <p class="article-description dark-3">List skill/technologies here. You can change the icon above
+            <h4 class="article-title">Masters in Computer Engineering</h4>
+            <h5 class="article-subtitle">Harvard University / 2015 - 2017</h5>
+            <p class="article-description">List skill/technologies here. You can change the icon above
               to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
           </article>
           <hr>
           <article>
-            <h4 class="article-title dark-2">Masters in Computer Engineering</h4>
-            <h5 class="article-subtitle dark-3">Harvard University / 2015 - 2017</h5>
-            <p class="article-description dark-3">List skill/technologies here. You can change the icon above
+            <h4 class="article-title">Masters in Computer Engineering</h4>
+            <h5 class="article-subtitle">Harvard University / 2015 - 2017</h5>
+            <p class="article-description">List skill/technologies here. You can change the icon above
               to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
           </article>
         </div>
         <!------------------------------ My Experience ------------------------------>
         <div id="experience">
-          <h3 class="resume-title dark-2">My Experience</h3>
+          <h3 class="resume-title">My Experience</h3>
           <article>
-            <h4 class="article-title dark-2">Sr. Font End Developer</h4>
-            <h5 class="article-subtitle dark-3">Apple Inc / 2020 - Current</h5>
-            <p class="article-description dark-3">List skill/technologies here. You can change the icon above
+            <h4 class="article-title">Sr. Font End Developer</h4>
+            <h5 class="article-subtitle">Apple Inc / 2020 - Current</h5>
+            <p class="article-description">List skill/technologies here. You can change the icon above
               to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
           </article>
           <hr>
           <article>
-            <h4 class="article-title dark-2">Jr. Font End Developer</h4>
-            <h5 class="article-subtitle dark-3">Dribbble Inc / 2018 - 2022</h5>
-            <p class="article-description dark-3">List skill/technologies here. You can change the icon above
+            <h4 class="article-title">Jr. Font End Developer</h4>
+            <h5 class="article-subtitle">Dribbble Inc / 2018 - 2022</h5>
+            <p class="article-description">List skill/technologies here. You can change the icon above
               to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
           </article>
           <hr>
           <article>
-            <h4 class="article-title dark-2">HTML Developer</h4>
-            <h5 class="article-subtitle dark-3">Adobe Inc / 2017 - 2018</h5>
-            <p class="article-description dark-3">List skill/technologies here. You can change the icon above
+            <h4 class="article-title">HTML Developer</h4>
+            <h5 class="article-subtitle">Adobe Inc / 2017 - 2018</h5>
+            <p class="article-description">List skill/technologies here. You can change the icon above
               to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
           </article>
         </div>
       </div>
       <!------------------------------ Download CV ------------------------------>
-      <div style="text-align: center;">
-        <button class=" primary-button"><i class="fa-solid fa-download"></i> Download CV</button>
-      </div>
+      <button class="primary-button" style="display: block; margin: 0 auto;"><i class="fa-solid fa-download"></i>
+        Download CV</button>
     </section>
   </main>
 
@@ -187,7 +190,7 @@
     <!------------------------------ Let's Connect ------------------------------>
     <div id="connect">
       <h3 class="connect-title">Lets Connect</h3>
-      <p id="connect-description" class="dark-3">Please fill out the form on this section to contact with me or call
+      <p id="connect-description">Please fill out the form on this section to contact with me or call
         between
         9:00 A.M
         and 8.00 P.M ET, Monday through Friday.
