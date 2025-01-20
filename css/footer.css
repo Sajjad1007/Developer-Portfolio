@@ -75,17 +75,20 @@ input[type="submit"]:hover {
   footer {
     flex-direction: row;
     text-align: left;
-    gap: 5rem;
+    gap: 4.5rem;
     padding: 5rem 11% 2.5rem;
   }
 
   #connect {
-    max-width: 48%;
+    max-width: 45%;
   }
 
-  #connect-description,
-  form {
+  #connect-description {
     width: 100%;
+  }
+
+  form {
+    width: 50%;
   }
 
   input[type="submit"] {

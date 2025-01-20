@@ -11,7 +11,8 @@
   padding: 0 1.5%;
 }
 
-.about-description {
+#about-description,
+.info {
   font-size: 0.85rem;
   line-height: 1.15rem;
   text-align: center;
@@ -41,7 +42,7 @@
 @media screen and (min-width: 992px) {
   #about {
     margin: 0 11% 5rem;
-    padding: 7% 11%;
+    padding: 9% 11%;
   }
 
   #info-container {

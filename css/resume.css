@@ -38,7 +38,7 @@ article {
 
 @media screen and (min-width: 576px) {
   article {
-    padding: 0 7%;
+    padding: 0 6%;
   }
 }
 
@@ -57,24 +57,16 @@ article {
     flex-direction: row;
     gap: 1.2rem;
     text-align: left;
-    padding: 0;
+    margin-bottom: 0.5rem;
   }
 
   article {
-    padding: 0;
-  }
-
-  .article-description {
-    padding-right: 1.5rem;
+    padding: 0 5% 0 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #resume {
     margin: 0 13% 5rem;
-  }
-
-  .article-description {
-    padding-right: 5rem;
   }
 }
