@@ -22,7 +22,7 @@
 .tech-title {
   font-size: 1.3rem;
   font-weight: 650;
-  margin: 10% 0;
+  margin: 1.4rem 0 0.8rem;
   color: var(--black);
 }
 
@@ -35,7 +35,7 @@
 @media screen and (min-width: 576px) {
   #skills-container {
     grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, calc((100% - 1.3rem) / 2));
   }
 }
 
@@ -56,7 +56,7 @@
 
   #skills-container {
     grid-template-rows: auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, calc((100% - 3.9rem) / 4));
   }
 }
 

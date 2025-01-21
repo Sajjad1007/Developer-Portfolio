@@ -59,13 +59,18 @@ article {
 
   #resume-container {
     flex-direction: row;
-    gap: 1.2rem;
+    justify-content: space-between;
     text-align: left;
     margin-bottom: 0.5rem;
   }
 
+  #education,
+  #experience {
+    max-width: 48.8%;
+  }
+
   article {
-    padding: 0 5% 0 0;
+    padding-left: 0;
   }
 }
 

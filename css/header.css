@@ -22,7 +22,7 @@ nav {
 
 #menu-icon {
   color: var(--black);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -90,7 +90,6 @@ nav li > a:hover {
   border-radius: 0.3rem;
   font-size: 0.9rem;
   border: var(--orange) 1.2px solid;
-  min-width: 152px;
 }
 
 #contact-button:hover {
