@@ -1,6 +1,11 @@
 footer {
   background-color: #fff8f3;
-  padding: 3rem 7% 2.5rem;
+}
+
+#footer-container {
+  padding: 3rem 5% 2.5rem;
+  max-width: 518px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -11,7 +16,7 @@ footer {
 }
 
 .connect-title {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 650;
   margin-bottom: 1.5rem;
   color: var(--black);
@@ -19,8 +24,8 @@ footer {
 
 #connect-description {
   margin-bottom: 1.5rem;
-  font-size: 0.78rem;
-  line-height: 1.15rem;
+  font-size: 0.82rem;
+  line-height: 1.2rem;
   color: var(--light-gray);
 }
 
@@ -32,14 +37,14 @@ footer {
 }
 
 footer img {
-  width: 1.5rem;
+  width: 1.8rem;
 }
 
 input,
 textarea {
   border: none;
   padding-left: 1.2rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   border-radius: 0.3rem;
 }
 
@@ -66,8 +71,8 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 576px) {
-  footer {
-    padding: 5rem 10% 2.5rem;
+  #footer-container {
+    max-width: 89%;
   }
 
   #connect-description,
@@ -79,12 +84,18 @@ input[type="submit"]:hover {
   }
 }
 
+@media screen and (min-width: 768px) {
+  #footer-container {
+    max-width: 88%;
+  }
+}
+
 @media screen and (min-width: 992px) {
-  footer {
+  #footer-container {
+    max-width: 87%;
     flex-direction: row;
     text-align: left;
     gap: 4.5rem;
-    padding: 5rem 11% 2.5rem;
   }
 
   #connect {
@@ -110,8 +121,15 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  footer {
-    padding: 5rem 13% 2.5rem;
+  #footer-container {
+    max-width: 86%;
     gap: 6rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #footer-container {
+    max-width: 85%;
+    gap: 7.5rem;
   }
 }

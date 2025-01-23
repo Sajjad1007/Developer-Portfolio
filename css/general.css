@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Work Sans", serif;
-}
-
 :root {
   --black: #181818;
   --dark-gray: #474747;
@@ -15,16 +8,11 @@
   --pink: #fff8f3;
 }
 
-.dark-1 {
-  color: #181818;
-}
-
-.dark-2 {
-  color: #474747;
-}
-
-.dark-3 {
-  color: #757575;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", serif;
 }
 
 .primary-button {
@@ -32,18 +20,19 @@
   color: white;
   font-weight: 600;
   border: none;
-  padding: 0.9rem 1.2rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
   border-radius: 0.3rem;
   font-size: 0.9rem;
 }
 
 .primary-button:hover {
-  background-color: #ef6909;
+  opacity: 0.8;
 }
 
 section {
-  margin: 0 7% 5rem;
+  max-width: 518px;
+  margin: 0 auto 5rem;
 }
 
 .section-title {
@@ -56,4 +45,34 @@ section {
 
 hr {
   color: #d1d1d1;
+}
+
+@media screen and (min-width: 576px) {
+  section {
+    max-width: 89%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 88%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    max-width: 87%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    max-width: 86%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  section {
+    max-width: 85%;
+  }
 }

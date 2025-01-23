@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mary Hardy</title>
+  <link rel="shortcut icon" href="images/hardy.png" type="image/x-icon">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/about.css">
@@ -15,9 +16,9 @@
 
 <body>
   <!------------------------------ Header ------------------------------>
-  <header>
+  <header id="header">
     <!------------------------------ Navbar ------------------------------>
-    <nav>
+    <nav id="navbar">
       <h3 id="nav-title">Ma<span style="color: var(--orange);">r</span>y</h3>
       <i id="menu-icon" class="fa-solid fa-bars"></i>
       <ul>
@@ -26,21 +27,21 @@
         <li><button class="primary-button">Hire Me</button></li>
       </ul>
     </nav>
-    <!------------------------------ Banner Content ------------------------------>
+    <!------------------------------ Banner ------------------------------>
     <div id="banner">
-      <div id="banner-container">
+      <div id="banner-content">
         <h4 id="banner-subtitle">Hi, I am</h4>
         <h1 id="banner-title">Mary Hardy</h1>
-        <p id="banner-description">Creative Web Developer committed to delivering innovative, user-friendly web
-          solutions and transforming ideas into exceptional online experiences.</p>
-        <!------------------------------ Banner Buttons ------------------------------>
+        <p id="banner-description">Creative web developer committed to deliver innovative, user-friendly web
+          solutions and transform ideas into exceptional online experiences.</p>
         <div id="button-container">
           <button class="primary-button">
             <i class="fa-solid fa-download"></i> Download CV</button>
           <button id="contact-button"><i class="fa-solid fa-phone"></i> Contact</button>
         </div>
       </div>
-      <div id="image-container">
+      <!------------------------------ Banner Image ------------------------------>
+      <div id="banner-image">
         <img src="images/hardy.png" alt="Mary Hardy">
       </div>
     </div>
@@ -86,28 +87,30 @@
     <section id="tech-skills">
       <h2 class="section-title">What I Do</h2>
       <p id="skills-description">
-        I have more than 10 years experience building software for clients all over the world. Below is a quick
+        I have more than 10 years experience building softwares for clients all over the world. Below is a quick
         overview
-        of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out
+        of my main technical skills and technologies I use. Want to find out more about my experience? Check out
         my
         online resume and project portfolio.
       </p>
-      <!------------------------------ Technologies ------------------------------>
       <div id="skills-container">
+        <!------------------------------ Javascript ------------------------------>
         <div class="tech-container">
           <img src="images/icons/js.png" alt="Javascript" height="40px">
           <h4 class="tech-title">JavaScript</h4>
           <p class="tech-description">Skilled in JavaScript, I build dynamic and interactive web features. With a deep
             understanding of the core language, I create clean, efficient, and fully
-            customized solutions tailored to meet unique project needs.</p>
+            customized solutions tailored to meet project needs.</p>
         </div>
+        <!------------------------------ React ------------------------------>
         <div class="tech-container">
           <img src="images/icons/react.png" alt="React" height="40px">
           <h4 class="tech-title">React</h4>
           <p class="tech-description">Experienced in React, I create responsive user interfaces that are
-            efficient and scalable. With a focus on clean code and reusability, I build seamless web applications that
+            efficient and scalable. With a focus on clean code and reusability, I build web applications that
             provide a smooth, engaging experience for users.</p>
         </div>
+        <!------------------------------ Node.js ------------------------------>
         <div class="tech-container">
           <img src="images/icons/nodejs.png" alt="Node.js" height="40px">
           <h4 class="tech-title">Node.js</h4>
@@ -115,6 +118,7 @@
             From developing RESTful APIs to handling real-time data streams, I utilize Node.js to deliver robust,
             high-performance web solutions.</p>
         </div>
+        <!------------------------------ MongoDB ------------------------------>
         <div class="tech-container">
           <img src="images/icons/mongo.png" alt="MongoDB" height="40px">
           <h4 class="tech-title">MongoDB</h4>
@@ -154,15 +158,15 @@
             <h5 class="article-subtitle">Los Angeles High School / 1996 - 2008</h5>
             <p class="article-description">Completing IB Program has
               strengthened my critical thinking and intercultural skills, equipped me with the tools to pursue higher
-              education and complex
-              academic challenges.</p>
+              education and take complex
+              challenges.</p>
           </article>
         </div>
         <!------------------------------ My Experience ------------------------------>
         <div id="experience">
           <h3 class="resume-title">My Experience</h3>
           <article>
-            <h4 class="article-title">Sr. Font End Developer</h4>
+            <h4 class="article-title">Sr. Front End Developer</h4>
             <h5 class="article-subtitle">Apple Inc / 2020 - Current</h5>
             <p class="article-description">As a Senior Front-End Developer, I led the creation of scalable, responsive
               websites while mentoring team members and
@@ -170,7 +174,7 @@
           </article>
           <hr>
           <article>
-            <h4 class="article-title">Jr. Font End Developer</h4>
+            <h4 class="article-title">Jr. Front End Developer</h4>
             <h5 class="article-subtitle">Dribbble Inc / 2018 - 2020</h5>
             <p class="article-description">As a Junior Front-End Developer, I contributed to building web applications
               and collaborating with design and development teams
@@ -192,29 +196,31 @@
   </main>
 
   <!------------------------------ Footer ------------------------------>
-  <footer>
-    <!------------------------------ Let's Connect ------------------------------>
-    <div id="connect">
-      <h3 class="connect-title">Lets Connect</h3>
-      <p id="connect-description">Please fill out the form on this section to contact with me or call
-        between
-        9:00 A.M
-        and 8.00 P.M ET, Monday through Friday.
-      </p>
-      <div id="social-links">
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a>
-        <a href="https://x.com/" target="_blank"><img src="images/icons/twitter.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com/" target=" _blank"><img src="images/icons/insta.png" alt="Instagram"></a>
+  <footer id="footer">
+    <div id="footer-container">
+      <!------------------------------ Let's Connect ------------------------------>
+      <div id="connect">
+        <h3 class="connect-title">Lets Connect</h3>
+        <p id="connect-description">Please fill out the form on this section to contact with me or call
+          between
+          9:00 A.M
+          and 8.00 P.M ET, Monday through Friday.
+        </p>
+        <div id="social-links">
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a>
+          <a href="https://x.com/" target="_blank"><img src="images/icons/twitter.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/" target=" _blank"><img src="images/icons/insta.png" alt="Instagram"></a>
+        </div>
       </div>
+      <!------------------------------ Let's Message Me ------------------------------>
+      <form>
+        <h3 class="connect-title">Let’s Message Me</h3>
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Your email">
+        <textarea rows="12" placeholder="Message"></textarea>
+        <input type="submit" class="primary-button">
+      </form>
     </div>
-    <!------------------------------ Let's Message Me ------------------------------>
-    <form>
-      <h3 class="connect-title">Let’s Message Me</h3>
-      <input type="text" placeholder="Your name">
-      <input type="email" placeholder="Your email">
-      <textarea rows="12" placeholder="Message"></textarea>
-      <input type="submit" class="primary-button">
-    </form>
   </footer>
 
   <!------------------------------ Script for adding icons ------------------------------>

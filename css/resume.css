@@ -1,3 +1,7 @@
+#resume {
+  padding: 0 5%;
+}
+
 #resume-container {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
 }
 
 .resume-title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
   color: var(--dark-gray);
@@ -21,22 +25,22 @@ article {
 }
 
 .article-title {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 580;
   margin-bottom: 0.3rem;
   color: var(--dark-gray);
 }
 
 .article-subtitle {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 530;
   margin-bottom: 0.8rem;
   color: var(--light-gray);
 }
 
 .article-description {
-  font-size: 0.78rem;
-  line-height: 1.15rem;
+  font-size: 0.82rem;
+  line-height: 1.2rem;
   color: var(--light-gray);
 }
 
@@ -46,17 +50,7 @@ article {
   }
 }
 
-@media screen and (min-width: 768px) {
-  #resume {
-    margin: 0 10% 5rem;
-  }
-}
-
 @media screen and (min-width: 992px) {
-  #resume {
-    margin: 0 11% 5rem;
-  }
-
   #resume-container {
     flex-direction: row;
     justify-content: space-between;
@@ -71,11 +65,5 @@ article {
 
   article {
     padding-left: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #resume {
-    margin: 0 13% 5rem;
   }
 }

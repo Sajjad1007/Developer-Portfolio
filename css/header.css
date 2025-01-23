@@ -1,9 +1,5 @@
 header {
   background-color: var(--pink);
-  background-image: url(../images/developer.png);
-  background-repeat: no-repeat;
-  background-size: 11%;
-  background-position: 3% 24%;
   margin-bottom: 6rem;
 }
 
@@ -11,13 +7,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.3rem;
-  padding: 2rem 7% 0;
+  padding: 1.2rem 5% 0;
+  max-width: 518px;
+  margin: 0 auto;
 }
 
 #nav-title {
   font-weight: 800;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 #menu-icon {
@@ -35,85 +32,81 @@ nav li {
 
 nav li > a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   color: var(--dark-gray);
 }
 
 nav li > a:hover {
   color: var(--light-gray);
-  text-decoration: dashed;
 }
 
 #banner {
   display: flex;
   flex-direction: column-reverse;
+  gap: 3rem;
   text-align: center;
+  padding: 2rem 5% 0;
+  max-width: 518px;
+  margin: 0 auto;
 }
 
-#banner-container {
-  margin: 2.5rem 7% 3rem;
+#banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #banner-subtitle {
   font-weight: 500;
   font-size: 2rem;
-  margin-bottom: 0.3rem;
   color: var(--dark-gray);
 }
 
 #banner-title {
   font-weight: 650;
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: var(--black);
 }
 
 #banner-description {
-  margin: 1.2rem 0 1.5rem;
-  font-size: 0.85rem;
-  line-height: 1.15rem;
+  margin: 1rem auto 1.3rem;
+  font-size: 0.93rem;
+  line-height: 1.25rem;
+  max-width: 90%;
   color: var(--light-gray);
 }
 
 #button-container {
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  align-items: center;
+  gap: 1rem;
+  padding-bottom: 6%;
 }
 
 #contact-button {
   color: var(--orange);
-  background-color: white;
+  background-color: var(--pink);
   font-weight: 600;
-  padding: 0.9rem 1.2rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
   border-radius: 0.3rem;
   font-size: 0.9rem;
-  border: var(--orange) 1.2px solid;
+  border: var(--orange) 1.5px solid;
+  min-width: 128px;
 }
 
 #contact-button:hover {
-  background-color: rgb(246, 241, 241);
-  color: var(--orange);
-}
-
-#image-container {
-  background-image: url(../images/header_bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right bottom;
-  text-align: right;
+  opacity: 0.7;
 }
 
 header img {
-  max-width: 90%;
+  width: 100%;
   display: block;
-  margin: 0 4% 0 auto;
 }
 
 @media screen and (min-width: 576px) {
-  header {
-    background-position: 3% 30%;
+  nav,
+  #banner {
+    max-width: 89%;
   }
 
   #menu-icon {
@@ -125,74 +118,91 @@ header img {
     align-items: center;
     gap: 2.5rem;
   }
-
-  #button-container {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1.2rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
   header {
-    background-size: 5.5%;
-    background-position: 2.2% 50%;
+    background-image: url(../images/developer.png), url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 5.4%, 52%;
+    background-position: 3% 51%, right bottom;
   }
 
-  nav {
-    padding: 2rem 10% 0;
+  nav,
+  #banner {
+    max-width: 88%;
+  }
+
+  nav ul {
+    gap: 3.25rem;
   }
 
   #banner {
     flex-direction: row;
     text-align: left;
     align-items: center;
+    gap: 0;
   }
 
-  #banner-container {
-    margin: 0 0 0 10%;
-    max-width: 40%;
+  #banner-content {
+    align-items: flex-start;
+    max-width: 55%;
+    gap: 0;
   }
 
-  #button-container {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1.2rem;
+  #banner-description {
+    margin: 0.8rem auto 1rem 0;
+    max-width: 90%;
   }
 
-  #contact-button {
-    min-width: 136px;
-  }
-
-  #image-container {
-    flex: 1;
+  #banner-image {
+    position: relative;
+    left: 4.5rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  nav {
-    padding: 2rem 11% 0;
+  nav,
+  #banner {
+    max-width: 87%;
   }
 
   nav ul {
     gap: 4rem;
   }
 
-  #banner-container {
-    margin: 0 0 0 11%;
+  #banner-image {
+    left: 6rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  nav,
+  #banner {
+    max-width: 86%;
+  }
+
+  nav ul {
+    gap: 4.75rem;
+  }
+
+  #banner-image {
+    left: 7.8rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   header {
-    background-position: 3.5% 50%;
+    background-size: 5.4%, 48%;
+    background-position: 4% 51%, right bottom;
   }
 
-  nav {
-    padding: 2rem 13% 0;
+  nav,
+  #banner {
+    max-width: 85%;
   }
 
-  #banner-container {
-    margin: 0 0 0 13%;
+  nav ul {
+    gap: 5.5rem;
   }
 }
